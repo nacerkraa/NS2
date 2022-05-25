@@ -19,5 +19,6 @@ set n1 [$ns node]
 # stablish a connection between the two nodes
 $ns duplex-link $n0 $n1 2Mb 4ms DropTail
 
+# genirate trafic (many trafic are available)
 
 
