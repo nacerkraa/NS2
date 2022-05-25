@@ -30,6 +30,12 @@ set sink [new Agent/TCPSink] ;# as a tcp receiver
 $ns attach-agent $n0 $tcp1
 $ns attach-agent $n1 $sink
 
+# astablish the connectoin betweent the two agent
+$ns connect $n0 $n1
+
+# create an application and attach it
+set ftp [new Application/FTP]
+$ftp attach-agent $tcp1
 
 
 
