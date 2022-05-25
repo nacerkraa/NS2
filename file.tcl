@@ -4,7 +4,7 @@
 #===================================
 #     Simulation parameters setup
 #===================================
-set val(stop)   10.0                         ;# time of simulation end
+set val(stop)   10.0;               # time of simulation end
 
 #===================================
 #        Initialization        
