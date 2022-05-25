@@ -20,7 +20,6 @@ $ns trace-all $tracefile
 #Open the NAM trace file
 set namfile [open out.nam w]
 $ns namtrace-all $namfile
-
 #===================================
 #        Nodes Definition        
 #===================================
