@@ -39,3 +39,10 @@ $ftp attach-agent $tcp1
 
 
 
+# spicify what time we whant to trigger
+$ns at .1 "ftp start"
+$ns at 2.0 "ftp stop"
+
+$ns at 2.1
+
+$ns run
