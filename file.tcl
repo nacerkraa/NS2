@@ -15,10 +15,9 @@ set ns [new Simulator]
 set tracefile [open out.tr w]
 $ns trace-all $tracefile
 
+#Open the NAM trace file
 set namfile [open out.nam w]
 $ns namtrace-all $namfile
-
-#Open the NAM trace file
 
 #===================================
 #        Nodes Definition        
