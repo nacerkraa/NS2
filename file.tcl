@@ -11,6 +11,7 @@ set val(stop)   10.0;               # time of simulation end
 #===================================
 #Create a ns simulator
 set ns [new Simulator]
+
 #Open the NS trace file
 set tracefile [open out.tr w]
 $ns trace-all $tracefile
