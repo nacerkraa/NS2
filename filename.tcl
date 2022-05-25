@@ -20,5 +20,10 @@ set n1 [$ns node]
 $ns duplex-link $n0 $n1 2Mb 4ms DropTail
 
 # genirate trafic (many trafic are available)
+# create agent (tcp, udp ...)
+set tcp1 [new Agent/TCP]
+set sink [new Agent/TCPSink] ;# as a tcp receiver 
+
+
 
 
