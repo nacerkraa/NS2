@@ -6,7 +6,6 @@ set ns [new Simulator]
 #Open the nam file basic1.nam and the variable-trace file basic1.tr
 set namfile [open basic1.nam w]
 $ns namtrace-all $namfile
-
 set tracefile [open basic1.tr w]
 $ns trace-all $tracefile
 
