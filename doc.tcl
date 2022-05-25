@@ -1,2 +1,2 @@
-set a 12 ; # 
-puts $a
+set a 14 ; # To set a value to a variable
+puts $a  ; # To print the value
