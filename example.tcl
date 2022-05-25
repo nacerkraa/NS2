@@ -1,5 +1,4 @@
 # basic1.tcl simulation: A---R---B
-
 #Create a simulator object
 set ns [new Simulator]
 
