@@ -38,11 +38,20 @@ set ftp [new Application/FTP]
 $ftp attach-agent $tcp1
 
 
+# create a procidure
+proc finish {} {
+    global ns tr ftr
+    $ns flush-trace
+    close $tr
+    close $ftr
+    exec nam out.nam &
+    exit
+}
 
 # spicify what time we whant to trigger
 $ns at .1 "ftp start"
 $ns at 2.0 "ftp stop"
 
-$ns at 2.1
+$ns at 2.1 "finish"
 
 $ns run
