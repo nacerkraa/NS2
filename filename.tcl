@@ -3,4 +3,4 @@ set x $a  ; # affectation
 set r [expr $a + 10]
 
 puts $x  ; # To print the value
-puts $a  ; # To print the value
+puts $r  ; # To print the value
