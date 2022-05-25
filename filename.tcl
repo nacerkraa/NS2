@@ -16,3 +16,8 @@ $ns namtrace-all $ftr
 set n0 [$ns node]
 set n1 [$ns node]
 
+# stablish a connection between the two nodes
+$ns duplex-link $n0 $n1 2Mb 4ms DropTail
+
+
+
