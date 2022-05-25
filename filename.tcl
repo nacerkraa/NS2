@@ -6,3 +6,13 @@
 set ns [new Simulater]
 
 # create two files to save the simulation in it
+set tr [open "out.tr" w]
+$ns trace-all $tr
+
+set ftr [open "out.nam" w]
+$ns namtrace-all $ftr
+
+# create two nodes
+set n0 [$ns node]
+set n1 [$ns node]
+
