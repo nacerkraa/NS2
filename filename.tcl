@@ -6,7 +6,7 @@ set f [open out.tr w]
 $ns trace-all $f
 
 #Define a 'finish' procedure
-proc finish {} {
+proc finish {f} {
 global ns
 $ns flush-trace
 close $f
