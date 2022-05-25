@@ -2,8 +2,8 @@
 ### simulaton app form the scratch #####
 ########################################
 
-# create the simulater
-set ns [new Simulater]
+# create the Simulator
+set ns [new Simulator]
 
 # create two files to save the simulation in it
 set tr [open "out.tr" w]
@@ -31,7 +31,7 @@ $ns attach-agent $n0 $tcp1
 $ns attach-agent $n1 $sink
 
 # astablish the connectoin betweent the two agent
-$ns connect $n0 $n1
+$ns connect $tcp1 $sink
 
 # create an application and attach it
 set ftp [new Application/FTP]
@@ -49,8 +49,8 @@ proc finish {} {
 }
 
 # spicify what time we whant to trigger
-$ns at .1 "ftp start"
-$ns at 2.0 "ftp stop"
+$ns at .1 "$ftp start"
+$ns at 2.0 "$ftp stop"
 
 $ns at 2.1 "finish"
 
