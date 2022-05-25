@@ -10,6 +10,7 @@ set val(stop)   10.0                         ;# time of simulation end
 #        Initialization        
 #===================================
 #Create a ns simulator
+
 set ns [new Simulator]
 
 #Open the NS trace file
