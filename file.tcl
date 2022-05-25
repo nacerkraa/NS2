@@ -38,8 +38,6 @@ $ns duplex-link $n1 $n2 1.0Mb 10ms DropTail
 $ns duplex-link $n3 $n2 1.0Mb 10ms DropTail
 
 
-
-
 #===================================
 #        Agents Definition        
 #===================================
