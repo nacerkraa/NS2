@@ -11,14 +11,14 @@ set val(stop)   10.0;               # time of simulation end
 #===================================
 #Create a ns simulator
 set ns [new Simulator]
-
 #Open the NS trace file
 set tracefile [open out.tr w]
 $ns trace-all $tracefile
 
-#Open the NAM trace file
 set namfile [open out.nam w]
 $ns namtrace-all $namfile
+
+#Open the NAM trace file
 
 #===================================
 #        Nodes Definition        
