@@ -52,7 +52,7 @@ $tcp0 set packetSize_ 1500
 #===================================
 #        Applications Definition        
 #===================================
-#Setup a FTP Application over TCP connection
+#Setup a FTP Application over TCP connection ..
 set ftp0 [new Application/FTP]
 $ftp0 attach-agent $tcp0
 $ns at 1.0 "$ftp0 start"
