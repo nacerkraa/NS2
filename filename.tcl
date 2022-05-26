@@ -12,7 +12,9 @@ close $nf
 exec nam out.nam &
 exit 0
 }
-# Creation des noeuds
+# => Creation des noeuds
+
+
 set n0 [$ns node]
 set n1 [$ns node]
 set n2 [$ns node]
@@ -48,7 +50,13 @@ $ns at 0.5 "$cbr0 start"
 $ns at 0.5 "$cbr1 start"
 $ns at 4.5 "$cbr0 stop"
 $ns at 4.5 "$cbr1 stop"
-# La simulation va durer 5 secondes et appeller la proc finish
+
+
+
+
+
+
+# => La simulation va durer 5 secondes et appeller la proc finish
 $ns at 5.0 "finish"
 # Definition de classes pour la coloration
 $udp0 set class_ 1
