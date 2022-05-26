@@ -25,7 +25,7 @@ $ns duplex-link $n0 $n2 2Mb 4ms DropTail
 # create agent (tcp, udp ...)
 set tcp1 [new Agent/TCP]
 set tcp2 [new Agent/TCP]
-set sink [new Agent/TCPSink] ;# as a tcp receiver 
+set sink [new Agent/TCPSink] ; # as a tcp receiver 
 
 # atach the first agent to the first node 
 # and the second agent to the second node
